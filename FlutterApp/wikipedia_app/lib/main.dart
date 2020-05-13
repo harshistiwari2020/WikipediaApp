@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:wikipediaapp/home_view.dart';
+import 'package:wikipediaapp/locator.dart';
+import 'package:wikipediaapp/ui/views/home_view.dart';
 
 void main() {
+  setUpLocator();
   runApp(MyApp());
 }
 

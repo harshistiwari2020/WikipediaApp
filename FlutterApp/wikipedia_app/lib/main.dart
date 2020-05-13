@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wikipediaapp/home_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,11 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        body: Center(
-          child: Text('Make A Cool App!'),
-        ),
-      ),
+      home: HomeView()
     );
   }
 }

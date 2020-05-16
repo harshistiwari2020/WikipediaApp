@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wikipediaapp/search_widget.dart';
+import 'file:///C:/Users/harsh/Documents/WorkFiles/GithubProjects/WikipediaApp/FlutterApp/wikipedia_app/lib/ui/widgets/search_widget.dart';
 
 class SearchIconButton extends StatelessWidget {
   const SearchIconButton({

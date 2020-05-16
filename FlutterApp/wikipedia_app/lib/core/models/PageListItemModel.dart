@@ -1,6 +1,6 @@
 class PageListItemModel {
   String title;
   String summary;
-
-  PageListItemModel({this.title, this.summary});
+  int pageId;
+  PageListItemModel({this.title, this.summary, this.pageId});
 }

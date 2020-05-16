@@ -8,11 +8,11 @@ import 'basemodel.dart';
 class HomeModel extends BaseModel{
   List<PageListItemModel> _pageListItemModel;
   var _api = locator<Api>();
-  List<String> basicTopic = ['Mathematics', 'Physics', 'Chemistry'];
+  List<String> basicTopic = ['Mathematics', 'Physics', 'Chemistry', 'History', 'Technology'];
   List<PageListItemModel> get pageList => _pageListItemModel;
   Future getPageListRandom() async {
     setState(ViewState.Busy);
-    _pageListItemModel = await _api.getSuggestionTopics(basicTopic, 5);
+    _pageListItemModel = await _api.getSuggestionTopics(basicTopic, 2);
     setState(ViewState.Idle);
     return _pageListItemModel;
   }

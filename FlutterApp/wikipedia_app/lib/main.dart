@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wikipediaapp/locator.dart';
+import 'package:wikipediaapp/ui/router.dart';
 import 'package:wikipediaapp/ui/views/home_view.dart';
 
 void main() {
@@ -16,7 +17,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeView()
+      initialRoute: '/',
+      onGenerateRoute: Router.generateRoute,
+//      home: HomeView()
     );
   }
 }
